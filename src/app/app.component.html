@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <span>Flat/Unflat-IT</span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon">verified_user</md-icon>
+</md-toolbar>
+<div class="inner-page">
+    <md-input-container class="full-width">
+      <textarea rows="20" [(ngModel)]=original mdInput placeholder="Paste JSON Here"></textarea>
+    </md-input-container>
+    <div fxLayout="row" fxLayoutAlign="end center" class="button-row">
+      <button md-raised-button color="primary" (click)="format()">Format</button>
+      <button md-raised-button color="primary" (click)="runFlatten()">Flatten</button>
+      <button md-raised-button color="primary" (click)="runUnFlatten()">Unflatten</button>
+    </div>
+    
+    </div>
+    

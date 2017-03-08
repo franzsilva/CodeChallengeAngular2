@@ -1,0 +1,10 @@
+.full-width {
+  width: 100%;
+}
+.inner-page {
+  padding: 20px
+}
+
+.inner-page button {
+    margin: 5px
+}
